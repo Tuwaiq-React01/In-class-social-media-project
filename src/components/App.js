@@ -53,7 +53,7 @@ export default class App extends Component {
             Please ..
             </h4>
           <FacebookLogin
-          appId="490316002077284"
+          appId="************"
           autoLoad={false}// to autoload the sign in when reftesh the page.
           fields="name,email,picture"
           callback={this.responseFacebook} />

@@ -39,10 +39,14 @@ export default class App extends Component {
 
 
   responseFacebook(response){
+    if(localStorage.getItem("token")){
     this.setState({name : response.name})
     this.setState({email : response.email})
     this.setState({picture : response.picture.data.url})
     this.setState({token : response.accessToken})
+    }else {
+      console.log("you are not singned in");
+    }
   }
 
 

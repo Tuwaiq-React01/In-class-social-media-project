@@ -102,4 +102,5 @@ input {
 }
 .card-body {
   padding: 1.2em;
+  width: 350px;
 }

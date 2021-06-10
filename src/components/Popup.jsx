@@ -39,7 +39,7 @@ export default function Popup() {
 
         {postArray.map((item, i)=> {
             return(
-                <Post key={i} image={item.image} title={item.title}/>
+                <Post key={i} src={item.image} title={item.title}/>
             )
         })}
 

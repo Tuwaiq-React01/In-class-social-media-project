@@ -39,16 +39,16 @@ export default class Home extends Component {
         return (
             <div>
                 <nav>
-                    <Link to="/">Home </Link>
-                    <Link to="/contact">Contact </Link>
+                    <Link to="/">Home</Link> {" | "}
+                    <Link to="/contact">Contact </Link>{" | "}
                     <Link to="/logout" onClick={this.logout}> LOGOUT</Link>
                 </nav>
 
                 
 
                 <br />
-                <div> 
-                    <img src={this.state.picutre} width="250px" alt="facebook account image" />
+                <div className="pageHeader"> 
+                    <img className="avatar" src={this.state.picutre} width="250px" alt="facebook account image" />
                     <h4>{this.state.name}</h4>
                     <h5>{this.state.email}</h5>
                 </div>
